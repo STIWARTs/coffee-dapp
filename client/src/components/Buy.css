@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+
+.center {
+  width: 10%;
+  margin: auto;
+  padding: 50px 50px;
+  background: #ffffff;
+  border: solid #E3E3E3 1px;
+  border-radius: 20px;
+}
+.center h1 {
+  font-size: 1.5em;
+  border-left: 5px solid dodgerblue;
+  padding: 5px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 70%;
+  height: 20px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 0.9em;
+  transition: 0.5s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 0.9em;
+}
+.center .inputbox [type="submit"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+  font-size:1em;
+
+}
+.center .inputbox:hover [type="submit"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+.buy-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 48px auto 24px auto;
+  background: var(--card-bg);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(59,130,246,0.10), 0 1.5px 8px rgba(0,0,0,0.04);
+  padding: 38px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s, box-shadow 0.2s, transform 0.15s;
+}
+.buy-card:hover {
+  box-shadow: 0 8px 32px rgba(59,130,246,0.13);
+  transform: translateY(-4px) scale(1.025);
+}
+.buy-card:active {
+  box-shadow: 0 2px 8px rgba(59,130,246,0.10);
+  transform: scale(0.98);
+}
+.buy-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.buy-card-icon {
+  font-size: 2.2rem;
+}
+.buy-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.inputbox {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+.floating-label input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 12px 14px 12px;
+  border: 1.5px solid var(--input-border);
+  border-radius: 10px;
+  background: var(--input-bg);
+  color: var(--input-text);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.floating-label label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: var(--input-label);
+  background: transparent;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown):not(:focus) + label {
+  top: -10px;
+  left: 8px;
+  font-size: 0.85rem;
+  color: var(--input-label-focus);
+  background: var(--card-bg);
+  padding: 0 4px;
+}
+.pay-btn {
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 0;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.15s;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.10);
+}
+.pay-btn:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+.pay-btn:hover:not(:disabled) {
+  background: #2563eb;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.18);
+}
+.pay-btn:active:not(:disabled) {
+  background: #1741a6;
+  transform: scale(0.97);
+  box-shadow: 0 1px 4px rgba(59,130,246,0.10);
+}
+
+/* Theme variables */
+:root {
+  --primary: #3b82f6;
+  --card-bg: #fff;
+  --input-bg: #f3f6fa;
+  --input-border: #d1d5db;
+  --input-label: #7b8794;
+  --input-label-focus: #3b82f6;
+  --input-text: #222;
+}
+.app-root.dark {
+  --primary: #2563eb;
+  --card-bg: #23272f;
+  --input-bg: #181c23;
+  --input-border: #374151;
+  --input-label: #bdbdbd;
+  --input-label-focus: #60a5fa;
+  --input-text: #f3f6fa;
+}

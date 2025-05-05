@@ -1,0 +1,67 @@
+.container-fluid {
+  margin-left: 120px;
+}
+
+.memos-container {
+  max-width: 700px;
+  margin: 32px auto 0 auto;
+  padding: 0 8px 32px 8px;
+}
+.memos-title {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--input-text);
+}
+.memos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.memo-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 18px 20px 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 5px solid var(--primary);
+  transition: background 0.3s, box-shadow 0.18s, transform 0.13s;
+}
+.memo-card:hover {
+  box-shadow: 0 6px 24px rgba(59,130,246,0.13);
+  transform: translateY(-2px) scale(1.015);
+}
+.memo-card:active {
+  box-shadow: 0 1px 4px rgba(59,130,246,0.10);
+  transform: scale(0.98);
+}
+.memo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.memo-name {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+.memo-date {
+  font-size: 0.95rem;
+  color: var(--input-label);
+}
+.memo-message {
+  font-size: 1.08rem;
+  color: var(--input-text);
+  margin-bottom: 2px;
+}
+.memo-from {
+  font-size: 0.93rem;
+  color: var(--input-label);
+  word-break: break-all;
+}
+
+/* Theme support is inherited from :root and .app-root.dark */

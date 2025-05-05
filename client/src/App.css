@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 18px 32px 10px 32px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  margin-bottom: 12px;
+  backdrop-filter: blur(12px) saturate(1.5);
+  -webkit-backdrop-filter: blur(12px) saturate(1.5);
+  border-bottom: 1.5px solid rgba(59,130,246,0.10);
+  transition: background 0.3s, box-shadow 0.2s;
+}
+.app-root.dark .app-header {
+  background: rgba(35, 39, 47, 0.65);
+  border-bottom: 1.5px solid rgba(96,165,250,0.13);
+}
+.app-header .theme-toggle-btn {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0;
+}
+.app-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.1rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: var(--primary);
+  margin: 0;
+  flex: unset;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-root.light {
+  background: #f3f6fa;
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+.app-root.dark {
+  background: #181c23;
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+.theme-toggle-btn {
+  background: rgba(255,255,255,0.55);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.10);
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: var(--primary);
+  margin-left: 0;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.theme-toggle-btn:hover {
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.18);
+}
+.theme-toggle-btn:active {
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 1px 4px rgba(59,130,246,0.10);
+}
+.app-root.dark .theme-toggle-btn {
+  background: rgba(35,39,47,0.65);
+}
+.app-root.dark .theme-toggle-btn:hover {
+  background: rgba(35,39,47,0.85);
+}
+.app-root.dark .theme-toggle-btn:active {
+  background: rgba(35,39,47,0.95);
+}
+
+.account-address-brown {
+  color: #8B5C2A;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

@@ -1,6 +1,47 @@
-# Coffee DApp
+# Buy Me a Coffee DApp
+
+## Screenshots
+
+### Light Mode
+![Light Mode](client/screenshots/light-mode.png)
+
+### Dark Mode
+![Dark Mode](client/screenshots/dark-mode.png)
 
 A decentralized application (DApp) for managing coffee-related transactions on the blockchain.
+
+## Project Structure
+
+```
+coffee-dapp/
+├── client/                      # Frontend React (Vite) application
+│   ├── public/                  # Static assets
+│   ├── src/                     # Source code
+│   │   ├── assets/              # Images, fonts, etc.
+│   │   ├── components/          # React components (Buy.jsx, Memos.jsx, etc.)
+│   │   ├── contractJson/        # Contract ABIs and addresses
+│   │   ├── screenshots/         # App screenshots for README
+│   │   ├── App.jsx              # Main application component
+│   │   ├── App.css              # Main styles
+│   │   ├── main.jsx             # Application entry point
+│   │   └── index.css            # Global styles
+│   ├── package.json             # Frontend dependencies
+│   ├── vite.config.js           # Vite configuration
+│   └── eslint.config.js         # ESLint configuration
+│
+├── contracts/                   # Smart contracts
+│   └── chai.sol                 # Main contract
+│
+├── scripts/                     # Deployment and utility scripts
+├── ignition/                    # Hardhat Ignition deployment modules
+├── artifacts/                   # Compiled contracts
+├── cache/                       # Hardhat cache
+├── node_modules/                # Dependencies
+├── .vscode/                     # VS Code settings
+├── hardhat.config.js            # Hardhat configuration
+├── package.json                 # Project dependencies
+└── .gitignore                   # Git ignore rules
+```
 
 ## Prerequisites
 
@@ -14,37 +55,6 @@ Before you begin, ensure you have the following installed:
 - Node.js: v22.14.0
 - Hardhat: v2.23.0
 - Hardhat Toolbox: v5.0.0
-
-## Project Structure
-
-```
-coffee-dapp/
-├── client/                    # Frontend React application
-│   ├── public/               # Static assets
-│   │   ├── assets/          # Images, fonts, etc.
-│   │   ├── components/      # React components
-│   │   ├── contractJson/    # Contract ABIs and addresses
-│   │   ├── App.jsx          # Main application component
-│   │   ├── App.css          # Main styles
-│   │   ├── main.jsx         # Application entry point
-│   │   └── index.css        # Global styles
-│   ├── package.json         # Frontend dependencies
-│   ├── vite.config.js       # Vite configuration
-│   └── eslint.config.js     # ESLint configuration
-│
-├── contracts/                # Smart contracts
-│   └── chai.sol             # Main contract
-│
-├── scripts/                  # Deployment and utility scripts
-├── ignition/                 # Hardhat Ignition deployment modules
-├── artifacts/                # Compiled contracts
-├── cache/                    # Hardhat cache
-├── node_modules/            # Dependencies
-├── .vscode/                 # VS Code settings
-├── hardhat.config.js        # Hardhat configuration
-├── package.json             # Project dependencies
-└── .gitignore              # Git ignore rules
-```
 
 ## Setup Instructions
 

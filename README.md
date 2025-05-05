@@ -3,10 +3,10 @@
 ## Screenshots
 
 ### Light Mode
-![Light Mode](client/screenshots/light-mode.png)
+![Light Mode](client/src/screenshots/light-mode.png)
 
 ### Dark Mode
-![Dark Mode](client/screenshots/dark-mode.png)
+![Dark Mode](client/src/screenshots/dark-mode.png)
 
 A decentralized application (DApp) for managing coffee-related transactions on the blockchain.
 

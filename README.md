@@ -54,7 +54,7 @@ Before you begin, ensure you have the following installed:
 ## Current Versions
 - Node.js: v22.14.0
 - Hardhat: v2.23.0
-- Hardhat Toolbox: v5.0.0(old not working) -> v6.0.0(working on)
+- Hardhat Toolbox: v5.0.0(old not working) -> v6.0.0(working)
 
 ## Setup Instructions
 
